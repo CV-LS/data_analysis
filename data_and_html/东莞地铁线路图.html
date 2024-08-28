@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/bmap.min.js"></script>
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ybGicIBt9c56brfI4alusbE8SfclQcjW"></script>
+        <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=ybGicIBt9c56brfI4alusbE8SfclQcjW"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+
+</head>
+<body>
+    <div id="3ec2d4da1e564b499aff506a96ae21c8" class="chart-container" style="width:1500px; height:800px;"></div>
+    <script>
+        var chart_3ec2d4da1e564b499aff506a96ae21c8 = echarts.init(
+            document.getElementById('3ec2d4da1e564b499aff506a96ae21c8'), 'macarons', {renderer: 'canvas'});
+        var option_3ec2d4da1e564b499aff506a96ae21c8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "lines",
+            "name": "\u4e1c\u839e\u5730\u94c1",
+            "coordinateSystem": "bmap",
+            "zlevel": 2,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "red",
+                "symbol": "roundRect",
+                "symbolSize": 3
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": true,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                [
+                    [
+                        113.86,
+                        23.0886,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.844,
+                        23.0795,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.814,
+                        23.0803,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.788,
+                        23.0628,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.779,
+                        23.0473,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.776,
+                        23.0327,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.768,
+                        23.02,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.76,
+                        23.0113,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.747,
+                        22.9939,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.729,
+                        22.9781,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.69,
+                        22.9577,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.674,
+                        22.941,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.664,
+                        22.9262,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.662,
+                        22.9024,
+                        "2\u53f7\u7ebf"
+                    ],
+                    [
+                        113.672,
+                        22.8593,
+                        "2\u53f7\u7ebf"
+                    ]
+                ]
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1.5,
+                "opacity": 0.5,
+                "curveness": 0,
+                "type": "solid",
+                "color": "blue"
+            },
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "red"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4e1c\u839e\u5730\u94c1"
+            ],
+            "selected": {
+                "\u4e1c\u839e\u5730\u94c1": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u4e1c\u839e\u7684\u5730\u94c1\u7ebf\u8def",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "bmap": {
+        "center": [
+            113.75,
+            23.04
+        ],
+        "zoom": 10,
+        "roam": true
+    }
+};
+        chart_3ec2d4da1e564b499aff506a96ae21c8.setOption(option_3ec2d4da1e564b499aff506a96ae21c8);
+            var bmap = chart_3ec2d4da1e564b499aff506a96ae21c8.getModel().getComponent('bmap').getBMap();
+                    bmap.addControl(new BMap.NavigationControl({"anchor": 0, "offset": {"width": 10, "height": 10}, "type": 0, "showZoomInfo": false, "enableGeolocation": false}));
+                    var overview = new BMap.OverviewMapControl({"anchor": 3, "offset": {"width": 10, "height": 50}, "isOpen": true});
+                    bmap.addControl(overview);
+                    bmap.addControl(new BMap.ScaleControl({"anchor": 2, "offset": {"width": 80, "height": 21}}));
+                    bmap.addControl(new BMap.MapTypeControl({"anchor": 1, "type": 0}));
+    </script>
+</body>
+</html>

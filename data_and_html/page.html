@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    
+</head>
+<body>
+    <style>.box {  }; </style>
+    <div class="box">
+                <div id="da14750c221642038c98e0295427425d" class="chart-container" style="width:1900px; height:400px;"></div>
+    <script>
+        var chart_da14750c221642038c98e0295427425d = echarts.init(
+            document.getElementById('da14750c221642038c98e0295427425d'), 'dark', {renderer: 'canvas'});
+        var option_da14750c221642038c98e0295427425d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "data_personsum",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "ATTORNEY",
+                    0.0152
+                ],
+                [
+                    "CONSULTANT",
+                    0.0148
+                ],
+                [
+                    "ENGINEER",
+                    0.0137
+                ],
+                [
+                    "EXECUTIVE",
+                    0.0645
+                ],
+                [
+                    "NOT EMPLOYED",
+                    0.006
+                ],
+                [
+                    "NOT PROVIDED",
+                    0.0169
+                ],
+                [
+                    "OWNER",
+                    0.0425
+                ],
+                [
+                    "PHYSICIAN",
+                    0.0133
+                ],
+                [
+                    "PRIVATE EQUITY",
+                    1.4883
+                ],
+                [
+                    "RETIRED",
+                    0.0132
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "markLine": {
+                "silent": false,
+                "precision": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                },
+                "data": [
+                    {
+                        "name": "\u5e73\u5747\u503c",
+                        "type": "average"
+                    },
+                    {
+                        "xAxis": "90%",
+                        "yAxis": "max",
+                        "symbol": "none"
+                    },
+                    {
+                        "name": "\u6700\u9ad8\u70b9",
+                        "type": "max",
+                        "symbol": "circle"
+                    }
+                ]
+            },
+            "itemStyle": {
+                "color": "blue"
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "data_personsum"
+            ],
+            "selected": {
+                "data_personsum": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 40,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "ATTORNEY",
+                "CONSULTANT",
+                "ENGINEER",
+                "EXECUTIVE",
+                "NOT EMPLOYED",
+                "NOT PROVIDED",
+                "OWNER",
+                "PHYSICIAN",
+                "PRIVATE EQUITY",
+                "RETIRED"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "2020-08-03\u603b\u6350\u6b3eTOP10\u804c\u4e1a\u4e2a\u4eba\u5360\u6bd4",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "xAxisIndex": false,
+                "yAxisIndex": false,
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            },
+            "brush": {
+                "icon": {},
+                "title": {
+                    "rect": "\u77e9\u5f62\u9009\u62e9",
+                    "polygon": "\u5708\u9009",
+                    "lineX": "\u6a2a\u5411\u9009\u62e9",
+                    "lineY": "\u7eb5\u5411\u9009\u62e9",
+                    "keep": "\u4fdd\u6301\u9009\u62e9",
+                    "clear": "\u6e05\u9664\u9009\u62e9"
+                }
+            }
+        }
+    }
+};
+        chart_da14750c221642038c98e0295427425d.setOption(option_da14750c221642038c98e0295427425d);
+    </script>
+<br/>                <div id="6fdfe07577de410da8f2cef8ca973735" class="chart-container" style="width:1900px; height:400px;"></div>
+    <script>
+        var chart_6fdfe07577de410da8f2cef8ca973735 = echarts.init(
+            document.getElementById('6fdfe07577de410da8f2cef8ca973735'), 'dark', {renderer: 'canvas'});
+        var option_6fdfe07577de410da8f2cef8ca973735 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "data_personsum",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "ATTORNEY",
+                    0.0214
+                ],
+                [
+                    "CONSULTANT",
+                    0.0216
+                ],
+                [
+                    "ENGINEER",
+                    0.0198
+                ],
+                [
+                    "NOT EMPLOYED",
+                    0.0085
+                ],
+                [
+                    "NOT PROVIDED",
+                    0.0209
+                ],
+                [
+                    "PHYSICIAN",
+                    0.0142
+                ],
+                [
+                    "PROFESSOR",
+                    0.0195
+                ],
+                [
+                    "RETIRED",
+                    0.0086
+                ],
+                [
+                    "SALES",
+                    0.015
+                ],
+                [
+                    "SOFTWARE ENGINEER",
+                    0.0288
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "markLine": {
+                "silent": false,
+                "precision": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                },
+                "data": [
+                    {
+                        "name": "\u5e73\u5747\u503c",
+                        "type": "average"
+                    },
+                    {
+                        "xAxis": "90%",
+                        "yAxis": "max",
+                        "symbol": "none"
+                    },
+                    {
+                        "name": "\u6700\u9ad8\u70b9",
+                        "type": "max",
+                        "symbol": "circle"
+                    }
+                ]
+            },
+            "itemStyle": {
+                "color": "red"
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "data_personsum"
+            ],
+            "selected": {
+                "data_personsum": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 40,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "ATTORNEY",
+                "CONSULTANT",
+                "ENGINEER",
+                "NOT EMPLOYED",
+                "NOT PROVIDED",
+                "PHYSICIAN",
+                "PROFESSOR",
+                "RETIRED",
+                "SALES",
+                "SOFTWARE ENGINEER"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "2020-08-08\u603b\u6350\u6b3eTOP10\u804c\u4e1a\u4e2a\u4eba\u5360\u6bd4",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "xAxisIndex": false,
+                "yAxisIndex": false,
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            },
+            "brush": {
+                "icon": {},
+                "title": {
+                    "rect": "\u77e9\u5f62\u9009\u62e9",
+                    "polygon": "\u5708\u9009",
+                    "lineX": "\u6a2a\u5411\u9009\u62e9",
+                    "lineY": "\u7eb5\u5411\u9009\u62e9",
+                    "keep": "\u4fdd\u6301\u9009\u62e9",
+                    "clear": "\u6e05\u9664\u9009\u62e9"
+                }
+            }
+        }
+    }
+};
+        chart_6fdfe07577de410da8f2cef8ca973735.setOption(option_6fdfe07577de410da8f2cef8ca973735);
+    </script>
+<br/>                <div id="c749d7d791154b718a9235d19e9d9ce1" class="chart-container" style="width:1900px; height:400px;"></div>
+    <script>
+        var chart_c749d7d791154b718a9235d19e9d9ce1 = echarts.init(
+            document.getElementById('c749d7d791154b718a9235d19e9d9ce1'), 'dark', {renderer: 'canvas'});
+        var option_c749d7d791154b718a9235d19e9d9ce1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "line",
+            "name": "data_personsum",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "ATTORNEY",
+                    0.0176
+                ],
+                [
+                    "CEO",
+                    0.0336
+                ],
+                [
+                    "CONSULTANT",
+                    0.0136
+                ],
+                [
+                    "LAWYER",
+                    0.0159
+                ],
+                [
+                    "MANAGER",
+                    0.0125
+                ],
+                [
+                    "NOT EMPLOYED",
+                    0.0071
+                ],
+                [
+                    "NOT PROVIDED",
+                    0.0288
+                ],
+                [
+                    "PHYSICIAN",
+                    0.018
+                ],
+                [
+                    "RETIRED",
+                    0.0099
+                ],
+                [
+                    "SOFTWARE ENGINEER",
+                    0.0197
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "markLine": {
+                "silent": false,
+                "precision": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                },
+                "data": [
+                    {
+                        "name": "\u5e73\u5747\u503c",
+                        "type": "average"
+                    },
+                    {
+                        "xAxis": "90%",
+                        "yAxis": "max",
+                        "symbol": "none"
+                    },
+                    {
+                        "name": "\u6700\u9ad8\u70b9",
+                        "type": "max",
+                        "symbol": "circle"
+                    }
+                ]
+            },
+            "itemStyle": {
+                "color": "green"
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "data_personsum"
+            ],
+            "selected": {
+                "data_personsum": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 40,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "ATTORNEY",
+                "CEO",
+                "CONSULTANT",
+                "LAWYER",
+                "MANAGER",
+                "NOT EMPLOYED",
+                "NOT PROVIDED",
+                "PHYSICIAN",
+                "RETIRED",
+                "SOFTWARE ENGINEER"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "2020-07-25\u603b\u6350\u6b3eTOP10\u804c\u4e1a\u4e2a\u4eba\u5360\u6bd4",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "xAxisIndex": false,
+                "yAxisIndex": false,
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            },
+            "brush": {
+                "icon": {},
+                "title": {
+                    "rect": "\u77e9\u5f62\u9009\u62e9",
+                    "polygon": "\u5708\u9009",
+                    "lineX": "\u6a2a\u5411\u9009\u62e9",
+                    "lineY": "\u7eb5\u5411\u9009\u62e9",
+                    "keep": "\u4fdd\u6301\u9009\u62e9",
+                    "clear": "\u6e05\u9664\u9009\u62e9"
+                }
+            }
+        }
+    }
+};
+        chart_c749d7d791154b718a9235d19e9d9ce1.setOption(option_c749d7d791154b718a9235d19e9d9ce1);
+    </script>
+<br/>    </div>
+    <script>
+    </script>
+</body>
+</html>

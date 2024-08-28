@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/bmap.min.js"></script>
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ybGicIBt9c56brfI4alusbE8SfclQcjW"></script>
+        <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=ybGicIBt9c56brfI4alusbE8SfclQcjW"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+
+</head>
+<body>
+    <div id="9bdfc70b1e9449eab29c04ed87455fda" class="chart-container" style="width:1500px; height:800px;"></div>
+    <script>
+        var chart_9bdfc70b1e9449eab29c04ed87455fda = echarts.init(
+            document.getElementById('9bdfc70b1e9449eab29c04ed87455fda'), 'macarons', {renderer: 'canvas'});
+        var option_9bdfc70b1e9449eab29c04ed87455fda = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "lines",
+            "name": "\u6e29\u5dde\u5730\u94c1",
+            "coordinateSystem": "bmap",
+            "zlevel": 2,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "red",
+                "symbol": "roundRect",
+                "symbolSize": 3
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": true,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 12,
+            "data": [
+                [
+                    [
+                        120.568499,
+                        27.92058,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.573846,
+                        27.940693,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.583876,
+                        27.96701,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.62758,
+                        27.9774,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.649951,
+                        27.97583,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.669738,
+                        27.979224,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.696902,
+                        27.979537,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.713926,
+                        27.972968,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.762868,
+                        27.958609,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.784375,
+                        27.954633,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.783059,
+                        27.930458,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.810919,
+                        27.915521,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.827978,
+                        27.908405,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.846807,
+                        27.905863,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.892042,
+                        27.95313,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.919902,
+                        27.940369,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.93488,
+                        27.930516,
+                        "S1\u7ebf"
+                    ],
+                    [
+                        120.950857,
+                        27.919864,
+                        "S1\u7ebf"
+                    ]
+                ]
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1.5,
+                "opacity": 0.5,
+                "curveness": 0,
+                "type": "solid",
+                "color": "blue"
+            },
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4,
+                "color": "red"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6e29\u5dde\u5730\u94c1"
+            ],
+            "selected": {
+                "\u6e29\u5dde\u5730\u94c1": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u6e29\u5dde\u7684\u5730\u94c1\u7ebf\u8def",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "bmap": {
+        "center": [
+            120.65,
+            28.01
+        ],
+        "zoom": 10,
+        "roam": true
+    }
+};
+        chart_9bdfc70b1e9449eab29c04ed87455fda.setOption(option_9bdfc70b1e9449eab29c04ed87455fda);
+            var bmap = chart_9bdfc70b1e9449eab29c04ed87455fda.getModel().getComponent('bmap').getBMap();
+                    bmap.addControl(new BMap.NavigationControl({"anchor": 0, "offset": {"width": 10, "height": 10}, "type": 0, "showZoomInfo": false, "enableGeolocation": false}));
+                    var overview = new BMap.OverviewMapControl({"anchor": 3, "offset": {"width": 10, "height": 50}, "isOpen": true});
+                    bmap.addControl(overview);
+                    bmap.addControl(new BMap.ScaleControl({"anchor": 2, "offset": {"width": 80, "height": 21}}));
+                    bmap.addControl(new BMap.MapTypeControl({"anchor": 1, "type": 0}));
+    </script>
+</body>
+</html>

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-liquidfill.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/zhe4_jiang1_wen1_zhou1.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/chalk.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'b39c92d2eb8442029b3f9680cbe1bddc')">温州地铁数量情况</button>
+            <button class="tablinks" onclick="showChart(event, 'ac927f00386643559b0065ecd0dfdce7')">温州地铁(<=15)</button>
+            <button class="tablinks" onclick="showChart(event, 'd8576f7b771d4384bc0926687da3f1f2')">温州地铁分布情况</button>
+    </div>
+
+    <div class="box">
+                <div id="b39c92d2eb8442029b3f9680cbe1bddc" class="chart-container" style="width:1530px; height:684px;"></div>
+    <script>
+        var chart_b39c92d2eb8442029b3f9680cbe1bddc = echarts.init(
+            document.getElementById('b39c92d2eb8442029b3f9680cbe1bddc'), 'chalk', {renderer: 'canvas'});
+        var option_b39c92d2eb8442029b3f9680cbe1bddc = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "name": "2021\u6e29\u5dde\u5730\u94c1\u5206\u5e03",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "legendHoverLink": true,
+            "data": [
+                6,
+                4,
+                3,
+                2,
+                2,
+                1
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "Magenta4",
+                "margin": 8,
+                "formatter": "{c}"
+            },
+            "itemStyle": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "liquidFill",
+            "name": "\u6e29\u5dde\u5360\u6bd4",
+            "data": [
+                0.0041,
+                0.9959
+            ],
+            "waveAnimation": true,
+            "animationDuration": 2000,
+            "animationDurationUpdate": 1000,
+            "color": [
+                "#294D99",
+                "#156ACF",
+                "#1598ED",
+                "#45BDFF"
+            ],
+            "shape": "arrow",
+            "backgroundStyle": {},
+            "outline": {
+                "show": true,
+                "borderDistance": 8
+            },
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "fontSize": 40,
+                "formatter": function (param) {                        return (Math.floor(param.value * 10000) / 100) + '%';                    }
+            },
+            "center": [
+                1200,
+                450
+            ],
+            "xAxisIndex": 1,
+            "yAxisIndex": 1
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "2021\u6e29\u5dde\u5730\u94c1\u5206\u5e03"
+            ],
+            "selected": {
+                "2021\u6e29\u5dde\u5730\u94c1\u5206\u5e03": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        },
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "City",
+            "show": true,
+            "scale": false,
+            "nameLocation": "middle",
+            "nameGap": 30,
+            "nameTextStyle": {
+                "fontFamily": "Microsoft Yahei",
+                "fontSize": 20
+            },
+            "gridIndex": 0,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "black"
+                }
+            },
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": true
+            },
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 40,
+                "margin": 8,
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "fontFamily": "Arial"
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\u9f99\u6e7e\u533a",
+                "\u74ef\u6d77\u533a",
+                "\u6c38\u5609\u53bf",
+                "\u745e\u5b89\u533a",
+                "\u9e7f\u57ce\u533a",
+                "\u6d1e\u5934\u533a"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "station_number",
+            "show": true,
+            "scale": false,
+            "nameLocation": "middle",
+            "nameGap": 30,
+            "nameTextStyle": {
+                "color": "black",
+                "fontFamily": "Times New Roman",
+                "fontSize": 20
+            },
+            "gridIndex": 0,
+            "axisLine": {
+                "show": false,
+                "onZero": true,
+                "onZeroAxisIndex": 0
+            },
+            "axisTick": {
+                "show": false,
+                "alignWithLabel": false,
+                "inside": true
+            },
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 12,
+                "fontFamily": "Times New Roman",
+                "formatter": "{value}"
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6e29\u5dde\u5730\u94c1\u7ad9\u70b9\u6570\u91cf",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "fontSize": 20
+            }
+        },
+        {
+            "text": "\u6e29\u5dde\u5730\u94c1\u7ad9\u70b9\u5728\u5168\u56fd\u5360\u6bd4",
+            "right": "10%",
+            "top": "top",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "purple"
+            }
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 6,
+        "textStyle": {
+            "color": "write",
+            "fontFamily": "Microsoft YaHei",
+            "fontSize": 15
+        },
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0
+    },
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "right": "55%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        },
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_b39c92d2eb8442029b3f9680cbe1bddc.setOption(option_b39c92d2eb8442029b3f9680cbe1bddc);
+    </script>
+                <div id="ac927f00386643559b0065ecd0dfdce7" class="chart-container" style="width:1530px; height:684px;"></div>
+    <script>
+        var chart_ac927f00386643559b0065ecd0dfdce7 = echarts.init(
+            document.getElementById('ac927f00386643559b0065ecd0dfdce7'), 'chalk', {renderer: 'canvas'});
+        var option_ac927f00386643559b0065ecd0dfdce7 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "funnel",
+            "name": "\u6e29\u5dde\u5730\u94c1",
+            "data": [
+                {
+                    "name": "\u9f99\u6e7e\u533a",
+                    "value": 6
+                },
+                {
+                    "name": "\u74ef\u6d77\u533a",
+                    "value": 4
+                },
+                {
+                    "name": "\u6c38\u5609\u53bf",
+                    "value": 3
+                },
+                {
+                    "name": "\u745e\u5b89\u533a",
+                    "value": 2
+                },
+                {
+                    "name": "\u9e7f\u57ce\u533a",
+                    "value": 2
+                },
+                {
+                    "name": "\u6d1e\u5934\u533a",
+                    "value": 1
+                }
+            ],
+            "sort": "descending",
+            "gap": 0,
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u745e\u5b89\u533a",
+                "\u9f99\u6e7e\u533a",
+                "\u6d1e\u5934\u533a",
+                "\u6c38\u5609\u53bf",
+                "\u74ef\u6d77\u533a",
+                "\u9e7f\u57ce\u533a"
+            ],
+            "selected": {
+                "\u9f99\u6e7e\u533a": true,
+                "\u74ef\u6d77\u533a": true,
+                "\u6c38\u5609\u53bf": true,
+                "\u745e\u5b89\u533a": true,
+                "\u9e7f\u57ce\u533a": true,
+                "\u6d1e\u5934\u533a": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u6e29\u5dde\u5730\u94c1\u5206\u6790",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "fontSize": 20
+            }
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 6,
+        "textStyle": {
+            "color": "write",
+            "fontFamily": "Microsoft YaHei",
+            "fontSize": 15
+        },
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0
+    }
+};
+        chart_ac927f00386643559b0065ecd0dfdce7.setOption(option_ac927f00386643559b0065ecd0dfdce7);
+    </script>
+                <div id="d8576f7b771d4384bc0926687da3f1f2" class="chart-container" style="width:1530px; height:684px;"></div>
+    <script>
+        var chart_d8576f7b771d4384bc0926687da3f1f2 = echarts.init(
+            document.getElementById('d8576f7b771d4384bc0926687da3f1f2'), 'chalk', {renderer: 'canvas'});
+        var option_d8576f7b771d4384bc0926687da3f1f2 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u6e29\u5dde",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "\u6e29\u5dde",
+            "data": [
+                {
+                    "name": "\u745e\u5b89\u533a",
+                    "value": 2
+                },
+                {
+                    "name": "\u74ef\u6d77\u533a",
+                    "value": 4
+                },
+                {
+                    "name": "\u9e7f\u57ce\u533a",
+                    "value": 2
+                },
+                {
+                    "name": "\u9f99\u6e7e\u533a",
+                    "value": 6
+                },
+                {
+                    "name": "\u6d1e\u5934\u533a",
+                    "value": 1
+                },
+                {
+                    "name": "\u6c38\u5609\u53bf",
+                    "value": 3
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": true,
+            "emphasis": {},
+            "xAxisIndex": 0,
+            "yAxisIndex": 0
+        },
+        {
+            "type": "pie",
+            "name": "\u6e29\u5dde\u5404\u533a\u5730\u94c1\u5360\u6bd4",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u745e\u5b89\u533a",
+                    "value": 2
+                },
+                {
+                    "name": "\u74ef\u6d77\u533a",
+                    "value": 4
+                },
+                {
+                    "name": "\u9e7f\u57ce\u533a",
+                    "value": 2
+                },
+                {
+                    "name": "\u9f99\u6e7e\u533a",
+                    "value": 6
+                },
+                {
+                    "name": "\u6d1e\u5934\u533a",
+                    "value": 1
+                },
+                {
+                    "name": "\u6c38\u5609\u53bf",
+                    "value": 3
+                }
+            ],
+            "radius": [
+                "40%",
+                "60%"
+            ],
+            "center": [
+                1200,
+                450
+            ],
+            "label": {
+                "show": true,
+                "position": "inside",
+                "color": "black",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "xAxisIndex": 1,
+            "yAxisIndex": 1
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6e29\u5dde"
+            ],
+            "selected": {
+                "\u6e29\u5dde": true
+            },
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        },
+        {
+            "data": [
+                "\u745e\u5b89\u533a",
+                "\u74ef\u6d77\u533a",
+                "\u9e7f\u57ce\u533a",
+                "\u9f99\u6e7e\u533a",
+                "\u6d1e\u5934\u533a",
+                "\u6c38\u5609\u53bf"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u6e29\u5dde\u5730\u94c1\u6570\u636e",
+            "padding": 5,
+            "itemGap": 10
+        },
+        {
+            "text": "\u6e29\u5dde\u5404\u533a\u5730\u94c1\u7ad9\u70b9\u5360\u6bd4",
+            "right": "10%",
+            "top": "top",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "purple"
+            }
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 6,
+        "text": [
+            "High",
+            "Low"
+        ],
+        "textStyle": {
+            "color": "write",
+            "fontFamily": "Microsoft YaHei",
+            "fontSize": 20
+        },
+        "inRange": {
+            "color": [
+                "lightskyblue",
+                "yellow",
+                "orangered"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0
+    },
+    "grid": [
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "right": "left",
+            "bottom": "50%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        },
+        {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
+            "left": "55%",
+            "bottom": "50%",
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
+        }
+    ],
+    "color": []
+};
+        chart_d8576f7b771d4384bc0926687da3f1f2.setOption(option_d8576f7b771d4384bc0926687da3f1f2);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
